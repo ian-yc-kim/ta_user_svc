@@ -3,4 +3,4 @@ from ta_user_svc.routers.user_registration import router as user_registration_ro
 
 app = FastAPI(debug=True)
 
-app.include_router(user_registration_router)
+app.include_router(user_registration_router, prefix="/api")
